@@ -25,8 +25,8 @@ To run the project locally with Rust, follow these steps:
 1. **Clone the repository**:
 
    ```sh
-   git clone <repository-url>
-   cd <repository-directory>
+   git clone https://github.com/PierreBou91/pawn-pal
+   cd pawn-pal
    ```
 
 2. **Run the application**:
@@ -92,7 +92,7 @@ To generate a URL-encoded FEN string from any FEN string, you can use an online 
 
 ## License
 
-This project is licensed under the MIT License. Feel free to use it as you see fit.
+This project is licensed under the GPL 3.0 License due to the shakmaty project dependency licence. Feel free to use it in accordance with this license.
 
 ## Contributing
 
