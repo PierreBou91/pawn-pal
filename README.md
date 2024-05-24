@@ -6,9 +6,7 @@ Welcome to the Pawn Pal API! This small API returns a JSON list of all possible 
 
 Go to your browser and type the following URL:
 
-```
 https://alpha.pawnpal.pbou.dev/standard/3r3r%2Fpkpn4%2F8%2F2p5%2F2P4p%2F2N1Q3%2FPP4P1%2F3R1R1K%20b%20-%20-%200%2026
-```
 
 ## Features
 
@@ -76,6 +74,7 @@ This will return a JSON array of possible moves for the given FEN string:
 ```json
 [
   {
+    "type": "Normal",
     "role": "King",
     "from": "G8",
     "capture": null,
@@ -83,6 +82,7 @@ This will return a JSON array of possible moves for the given FEN string:
     "promotion": null
   },
   {
+    "type": "Normal",
     "role": "King",
     "from": "G8",
     "capture": null,
@@ -92,7 +92,7 @@ This will return a JSON array of possible moves for the given FEN string:
 ]
 ```
 
-Each move is a valid JSON object containing `role` (the piece that moved), `from` (starting position), `to` (ending position), `capture` (if any), and `promotion` (if applicable).
+Each move is a valid JSON object containing `type` (the type of move among `Normal`, `EnPassant`, `Castle` and `Put`) `role` (the piece that moved), `from` (starting position), `to` (ending position), `capture` (if any), and `promotion` (if applicable).
 
 ### Generating URL-encoded FEN
 
