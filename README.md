@@ -2,6 +2,14 @@
 
 Welcome to the Pawn Pal API! This small API returns a JSON list of all possible chess moves given a URL-encoded [FEN (Forsyth-Edwards Notation)](https://en.wikipedia.org/wiki/Forsyth%E2%80%93Edwards_Notation) string. It's perfect for integrating chess move generation into your projects.
 
+## Try it yourself!
+
+Go to your browser and type the following URL:
+
+```
+https://alpha.pawnpal.pbou.dev/standard/3r3r%2Fpkpn4%2F8%2F2p5%2F2P4p%2F2N1Q3%2FPP4P1%2F3R1R1K%20b%20-%20-%200%2026
+```
+
 ## Features
 
 - **Simple API**: Provides a straightforward interface to get possible chess moves from a given FEN string.
